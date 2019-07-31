@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:text="Ringkasan Booking Perjalanan"
+            android:text="Ringkasan Booking Pengiriman"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -260,7 +260,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/round"
             android:backgroundTint="#0B7910"
-            android:text="Kirim Booking Perjalanan"
+            android:text="Kirim Booking Pengiriman"
             android:textColor="#FFFBFB" />
     </LinearLayout>
 
