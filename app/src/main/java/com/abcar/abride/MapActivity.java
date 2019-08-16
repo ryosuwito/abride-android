@@ -85,14 +85,26 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         final Marker mMarker;
         final LatLng[] jak = {new LatLng(-6.1634976, 106.8119999)};
         if(isDestination){
-            infoView.setText("Pilih Titik Tujuan Anda");
-            titikView.setText("Titik Tujuan");
-            buttonSet.setText("Set Titik Tujuan");
+            if(jenis.equalsIgnoreCase("deliver")){
+                infoView.setText("Pilih Titik Antar");
+                titikView.setText("Titik Antar");
+                buttonSet.setText("Set Titik Antar");
+            }else{
+                infoView.setText("Pilih Titik Tujuan Anda");
+                titikView.setText("Titik Tujuan");
+                buttonSet.setText("Set Titik Tujuan");
+            }
             mMarker = mMap.addMarker(new MarkerOptions().position(jak[0]).title("Titik Tujuan"));
         }else{
-            infoView.setText("Pilih Titik Jemput");
-            titikView.setText("Titik Jemput");
-            buttonSet.setText("Set Titik Jemput");
+            if(jenis.equalsIgnoreCase("deliver")){
+                infoView.setText("Pilih Titik Pick Up");
+                titikView.setText("Titik Pick Up");
+                buttonSet.setText("Set Titik Pick Up");
+            }else{
+                infoView.setText("Pilih Titik Jemput");
+                titikView.setText("Titik Jemput");
+                buttonSet.setText("Set Titik Jemput");
+            }
             mMarker = mMap.addMarker(new MarkerOptions().position(jak[0]).title("Titik Jemput"));
         }
         mMarker.setDraggable(true);

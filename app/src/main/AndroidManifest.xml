@@ -34,7 +34,8 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ErrorActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ErrorActivity" />
         <activity android:name=".DeliverActivity" />
         <activity android:name=".ThanksActivity" />
         <activity android:name=".SummaryActivity" />
